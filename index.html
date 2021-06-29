@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="imagem/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="div1">Meu carrinho</div>
+      <hr />
+      <div id="div2">
+        <span id="img01" class="imgs"><img src="imagem/01.png" alt="" /></span>
+
+        <span class="dados">
+          <div>Trufa de brigadeiro</div>
+          <div class="maiorValor">R$ 2,00</div>
+          <div>R$ 1,50</div>
+          <input
+            id="quant1"
+            class="quantidade"
+            type="number"
+            placeholder="Quantidade:"
+          />
+        </span>
+
+        <span class="imgs"><img src="imagem/02.png" alt="" /></span>
+
+        <span class="dados">
+          <div>Trufa de chocolate 70% cacau</div>
+          <div class="maiorValor">R$ 2,00</div>
+          <div>R$ 1,50</div>
+          <input
+            id="quant2"
+            class="quantidade"
+            type="number"
+            placeholder="Quantidade:"
+          />
+        </span>
+
+        <span class="imgs"><img src="imagem/03.png" alt="" /></span>
+
+        <span class="dados">
+          <div>Trufa de leite condensado</div>
+          <div class="maiorValor">R$ 2,00</div>
+          <div>R$ 1,50</div>
+          <input
+            id="quant3"
+            class="quantidade"
+            type="number"
+            placeholder="Quantidade:"
+          />
+        </span>
+
+        <span id="img02" class="imgs"><img src="imagem/04.png" alt="" /></span>
+
+        <span class="dados">
+          <div>Trufa de maracuja</div>
+          <div class="maiorValor">R$ 2,00</div>
+          <div>R$ 1,50</div>
+          <input
+            id="quant4"
+            class="quantidade"
+            type="number"
+            placeholder="Quantidade:"
+          />
+        </span>
+
+        <div></div>
+
+        <div id="divBtn">
+          <button id="btn" onclick="clicou()">Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <hr />
+
+      <div id="div3">
+        <div id="frete">
+          <span>Frete</span>
+          <span>R$ 2,00</span>
+        </div>
+
+        <div id="unidades">
+          <span>Unidades: <span id="quantUnidades">0</span> </span>
+          <span id="totalUnidades"> <span>R$ </span> 0,00</span>
+        </div>
+
+        <div id="total">
+          <span>Total</span>
+          <span id="resultado"> <span>R$ </span> 0,00</span>
+        </div>
+        <div id="freteGratis">Parabéns, sua compra tem frete grátis!</div>
+      </div>
+
+      <hr />
+
+      <div onmouseout="mouseFora()" onmouseover="mouseDentro()" id="finalizar">
+        Finalizar compra
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
